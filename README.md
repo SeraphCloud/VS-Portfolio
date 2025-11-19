@@ -1,70 +1,171 @@
-# Getting Started with Create React App
+# Victor Alexandre Silva - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação web moderna e responsiva construída com React.js, representando o portfólio profissional de Victor Alexandre Silva, desenvolvedor Front-End especializado em criar experiências digitais inovadoras.
 
-## Available Scripts
+![Portfolio Preview](https://img.shields.io/badge/Status-Online-green) ![React](https://img.shields.io/badge/React-18.2.0-blue) ![SCSS](https://img.shields.io/badge/SCSS-Modern-orange)
 
-In the project directory, you can run:
+## 🚀 Tecnologias Utilizadas
 
-### `npm start`
+Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js** - Biblioteca JavaScript para construção de interfaces
+- **Create React App** - Ambiente de desenvolvimento moderno
+- **React Router** - Navegação client-side
+- **SCSS/Sass** - Pré-processador CSS para styling avançado
+- **Atomic Design** - Metodologia de design de componentes
+- **Responsive Design** - Design adaptativo para todos os dispositivos
+- **ES6+ JavaScript** - Sintaxe moderna do JavaScript
+- **Git & GitHub** - Controle de versão e hospedagem
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Pré-requisitos
 
-### `npm test`
+Antes de executar este projeto, certifique-se de ter instalado em sua máquina:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/) (versão 14.0.0 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- Git
 
-### `npm run build`
+## 🛠️ Instalação e Execução
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone o repositório:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/victor-alexandre/portfolio.git
+   cd portfolio
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Instale as dependências:**
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Execute o servidor de desenvolvimento:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Acesse a aplicação:**
+   Abra [http://localhost:3000](http://localhost:3000) no seu navegador
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Scripts Disponíveis
 
-## Learn More
+No diretório do projeto, você pode executar:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `npm start` - Executa a aplicação em modo de desenvolvimento
+- `npm test` - Executa o conjunto de testes
+- `npm run build` - Cria uma build otimizada para produção
+- `npm run eject` - Remove o Create React App (operação irreversível)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🏗️ Estrutura do Projeto
 
-### Code Splitting
+```
+src/
+├── components/           # Componentes reutilizáveis
+│   ├── atoms/           # Componentes básicos (Button, Logo)
+│   ├── molecules/       # Componentes médios (Navigation, SkillItem)
+│   └── organisms/       # Componentes complexos (Hero, About, Projects)
+├── styles/              # Estilos globais e componentes SCSS
+│   ├── components/      # Estilos dos componentes
+│   ├── _variables.scss  # Variáveis SCSS
+│   └── global.scss      # Estilos globais
+├── App.js               # Componente principal da aplicação
+└── index.js             # Ponto de entrada da aplicação
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎯 Funcionalidades
 
-### Analyzing the Bundle Size
+- **Design Responsivo**: Adaptação completa para dispositivos móveis, tablets e desktops
+- **Navegação Suave**: Scroll suave entre seções da página
+- **Portfolio Interativo**: Apresentação profissional de projetos e habilidades
+- **Performance Otimizada**: Build otimizada com melhores práticas do React
+- **Acessibilidade**: Estrutura semântica e acessível
+- **SEO Friendly**: Meta tags e estrutura otimizada para mecanismos de busca
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📱 Seções do Portfolio
 
-### Making a Progressive Web App
+1. **Hero** - Apresentação pessoal e profissional
+2. **About** - Biografia, habilidades técnicas e experiência
+3. **Projects** - Showcase dos principais projetos desenvolvidos
+4. **Contact** - Informações de contato e links sociais
+5. **Footer** - Créditos e informações adicionais
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 💼 Habilidades Técnicas
 
-### Advanced Configuration
+### Front-End
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- React.js / Next.js
+- JavaScript (ES6+)
+- TypeScript
+- HTML5 & CSS3
+- SCSS/Sass
+- Tailwind CSS
+- Responsive Design
 
-### Deployment
+### Back-End & Ferramentas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Node.js
+- PostgreSQL
+- Git & GitHub
+- Vercel (Deploy)
 
-### `npm run build` fails to minify
+### Metodologias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Atomic Design
+- Test-Driven Development
+- Agile/Scrum
+
+## 🚀 Deploy
+
+Este projeto está configurado para fácil deploy em plataformas como Vercel, Netlify ou GitHub Pages.
+
+### Deploy na Vercel
+
+1. Instale a CLI da Vercel: `npm install -g vercel`
+2. Execute: `vercel`
+3. Siga as instruções na tela
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Desenvolvedor
+
+**Victor Alexandre Silva**
+
+- Estudante de Engenharia de Software
+- Desenvolvedor Front-End
+- 📧 Email: victor.alexandre@email.com
+- 💼 LinkedIn: [victor-alexandre-silva](https://linkedin.com/in/victor-alexandre-silva)
+- 🐙 GitHub: [@victor-alexandre](https://github.com/seraphcloud)
+
+## 🤝 Contribuições
+
+Contribuições são sempre bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add: AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📝 Changelog
+
+### v1.0.0 (2025-11-19)
+
+- ✅ Build inicial do portfolio
+- ✅ Implementação de todas as seções principais
+- ✅ Design responsivo completo
+- ✅ Otimização de performance
+- ✅ Deploy automático configurado
+
+## 🙏 Agradecimentos
+
+- [React Team](https://reactjs.org/) pela incrível biblioteca
+- [Create React App](https://create-react-app.dev/) pela configuração inicial
+- Comunidade open source pelos recursos e ferramentas
+
+---
+
+⭐ **Desenvolvido com paixão por Victor Alexandre Silva**

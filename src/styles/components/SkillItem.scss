@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $color-text-secondary;
+  font-size: 0.95rem;
+
+  &::before {
+    content: "▹";
+    color: $color-accent;
+    font-size: 1.2rem;
+  }
+}

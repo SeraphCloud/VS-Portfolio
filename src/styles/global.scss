@@ -1,0 +1,54 @@
+// Reset & Base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-sans;
+  background-color: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+// Container
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// Section
+.section {
+  min-height: 100vh;
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+}
+
+// Section Title
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: $color-accent;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
