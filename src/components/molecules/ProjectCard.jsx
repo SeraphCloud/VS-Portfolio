@@ -1,5 +1,5 @@
-import React from "react";
-import "../../styles/components/ProjectCard.scss";
+import React from 'react';
+import '../../styles/components/ProjectCard.scss';
 
 const ProjectCard = ({
   title,

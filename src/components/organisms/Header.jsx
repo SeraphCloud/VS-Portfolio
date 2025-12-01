@@ -1,13 +1,13 @@
-import React from "react";
-import Logo from "../atoms/Logo";
-import Navigation from "../molecules/Navigation";
-import "../../styles/components/Header.scss";
+import React from 'react';
+import Logo from '../atoms/Logo';
+import Navigation from '../molecules/Navigation';
+import '../../styles/components/Header.scss';
 
-const Header = () => {
+const Header = ({ activeSection }) => {
   return (
     <header className="header">
       <Logo />
-      <Navigation />
+      <Navigation activeSection={activeSection} />
     </header>
   );
 };

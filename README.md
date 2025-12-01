@@ -2,7 +2,7 @@
 
 Uma aplicação web moderna e responsiva construída com React.js, representando o portfólio profissional de Victor Alexandre Silva, desenvolvedor Front-End especializado em criar experiências digitais inovadoras.
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Online-green) ![React](https://img.shields.io/badge/React-18.2.0-blue) ![SCSS](https://img.shields.io/badge/SCSS-Modern-orange)
+![Portfolio Preview](https://img.shields.io/badge/Status-Online-green) ![React](https://img.shields.io/badge/React-19.2.0-blue) ![SCSS](https://img.shields.io/badge/SCSS-Modern-orange) ![Prettier](https://img.shields.io/badge/code_style-prettier-orange) ![ESLint](https://img.shields.io/badge/linting-eslint-red)
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -10,11 +10,12 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 
 - **React.js** - Biblioteca JavaScript para construção de interfaces
 - **Create React App** - Ambiente de desenvolvimento moderno
-- **React Router** - Navegação client-side
 - **SCSS/Sass** - Pré-processador CSS para styling avançado
 - **Atomic Design** - Metodologia de design de componentes
 - **Responsive Design** - Design adaptativo para todos os dispositivos
 - **ES6+ JavaScript** - Sintaxe moderna do JavaScript
+- **ESLint & Prettier** - Linting e formatação automática
+- **Jest & Testing Library** - Testes unitários e de interface
 - **Git & GitHub** - Controle de versão e hospedagem
 
 ## 📋 Pré-requisitos
@@ -57,6 +58,9 @@ No diretório do projeto, você pode executar:
 - `npm test` - Executa o conjunto de testes
 - `npm run build` - Cria uma build otimizada para produção
 - `npm run eject` - Remove o Create React App (operação irreversível)
+- `npm run lint` - Executa análise de linting no código
+- `npm run lint:fix` - Executa análise de linting e corrige automaticamente problemas
+- `npm run format` - Formata o código usando Prettier
 
 ## 🏗️ Estrutura do Projeto
 
@@ -151,6 +155,16 @@ Contribuições são sempre bem-vindas! Para contribuir:
 5. Abra um Pull Request
 
 ## 📝 Changelog
+
+### v1.1.0 (2025-12-01)
+
+- ✅ Melhorias de acessibilidade no componente Icon (aria-label, role)
+- ✅ Code splitting implementado com React.lazy para carregamento lazy dos componentes
+- ✅ Adição de testes unitários para componentes críticos
+- ✅ Configuração de ESLint e Prettier para padronização de código
+- ✅ Meta tags Open Graph e Twitter Cards adicionadas para melhor SEO
+- ✅ Estrutura de dados melhorada com IDs únicos para renderização eficiente
+- ✅ Scripts de linting e formatação adicionados ao projeto
 
 ### v1.0.0 (2025-11-19)
 

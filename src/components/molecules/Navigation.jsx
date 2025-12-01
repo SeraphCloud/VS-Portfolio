@@ -1,8 +1,15 @@
-import React, { useState } from "react";
-import "../../styles/components/Navigation.scss";
+import React, { useState } from 'react';
+import '../../styles/components/Navigation.scss';
 
-const Navigation = () => {
+const Navigation = ({ activeSection }) => {
   const [isActive, setIsActive] = useState(false);
+
+  const navLinks = [
+    { href: '#home', label: 'Início' },
+    { href: '#about', label: 'Sobre' },
+    { href: '#projects', label: 'Projetos' },
+    { href: '#contact', label: 'Contato' },
+  ];
 
   const toggleMenu = () => {
     setIsActive(!isActive);
@@ -14,36 +21,31 @@ const Navigation = () => {
 
   return (
     <nav className="nav-wrapper">
-      <ul className={`nav ${isActive ? "active" : ""}`} id="nav">
-        <li>
-          <a href="#home" onClick={closeMenu}>
-            Início
-          </a>
-        </li>
-        <li>
-          <a href="#about" onClick={closeMenu}>
-            Sobre
-          </a>
-        </li>
-        <li>
-          <a href="#projects" onClick={closeMenu}>
-            Projetos
-          </a>
-        </li>
-        <li>
-          <a href="#contact" onClick={closeMenu}>
-            Contato
-          </a>
-        </li>
+      <ul className={`nav ${isActive ? 'active' : ''}`} id="nav">
+        {navLinks.map((link) => (
+          <li key={link.href}>
+            <a
+              href={link.href}
+              className={activeSection === link.href.slice(1) ? 'active' : ''}
+              onClick={closeMenu}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
       </ul>
-      <div
-        className={`menu-toggle ${isActive ? "active" : ""}`}
+      <button
+        type="button"
+        className={`menu-toggle ${isActive ? 'active' : ''}`}
         onClick={toggleMenu}
+        aria-expanded={isActive}
+        aria-controls="nav"
+        aria-label={isActive ? 'Fechar menu' : 'Abrir menu'}
       >
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
     </nav>
   );
 };

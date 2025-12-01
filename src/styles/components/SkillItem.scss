@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import '../variables.scss';
 
 .skill-item {
   display: flex;
@@ -8,7 +8,7 @@
   font-size: 0.95rem;
 
   &::before {
-    content: "▹";
+    content: '▹';
     color: $color-accent;
     font-size: 1.2rem;
   }

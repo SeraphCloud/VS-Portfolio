@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import '../variables.scss';
 
 // Contact
 .contact-content {
@@ -24,7 +24,9 @@
     color: $color-text-secondary;
     text-decoration: none;
     font-size: 1.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
 
     &:hover {
       color: $color-accent;

@@ -1,0 +1,24 @@
+@import '../variables';
+
+// A maioria dos estilos de .section e .container são globais.
+// Este arquivo pode ser usado para overrides ou estilos específicos do componente Section.
+
+.section-title {
+  font-size: $font-size-xl;
+  font-weight: 700;
+  margin-bottom: $spacing-xl;
+  color: $color-text;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: calc(-#{$spacing-sm} - 2px); // Ajuste fino
+    left: 0;
+    width: 50%;
+    height: $border-radius-sm;
+    background: $color-accent;
+    border-radius: $border-radius-sm;
+  }
+}

@@ -1,66 +1,58 @@
-import React, { useEffect, useState } from "react";
-import "./styles/index.scss";
+import React, { useEffect, useState, lazy, Suspense } from 'react';
+import './styles/index.scss';
 
-import Header from "./components/organisms/Header";
-import Hero from "./components/organisms/Hero";
-import About from "./components/organisms/About";
-import Projects from "./components/organisms/Projects";
-import Contact from "./components/organisms/Contact";
-import Footer from "./components/organisms/Footer";
+import Header from './components/organisms/Header';
+const Hero = lazy(() => import('./components/organisms/Hero'));
+const About = lazy(() => import('./components/organisms/About'));
+const Projects = lazy(() => import('./components/organisms/Projects'));
+const Contact = lazy(() => import('./components/organisms/Contact'));
+const Footer = lazy(() => import('./components/organisms/Footer'));
 
 function App() {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll(".section");
-      let current = "home";
+      const sections = document.querySelectorAll('.section');
+      let current = 'home';
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (window.pageYOffset >= sectionTop - 200) {
-          current = section.getAttribute("id");
+          current = section.getAttribute('id');
         }
       });
       setActiveSection(current);
-
-      // Update nav links
-      const navLinks = document.querySelectorAll(".nav a");
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").slice(1) === current) {
-          link.classList.add("active");
-        }
-      });
     };
 
     // Smooth scroll for nav links
-    const navAnchors = document.querySelectorAll('a[href^="#"]');
+    const navAnchors = document.querySelectorAll('.nav a[href^="#"]');
     navAnchors.forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
+        const target = document.querySelector(this.getAttribute('href'));
         if (target) {
           target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
+            behavior: 'smooth',
+            block: 'start',
           });
         }
       });
     });
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Header activeSection={activeSection} />
+      <Suspense fallback={<div className="loading">Carregando...</div>}>
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

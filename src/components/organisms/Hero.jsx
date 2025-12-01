@@ -1,19 +1,19 @@
-import React from "react";
-import Button from "../atoms/Button";
-import "../../styles/components/Hero.scss";
+import React from 'react';
+import Button from '../atoms/Button';
+import '../../styles/components/Hero.scss';
 
 const Hero = () => {
   const handleProjectsScroll = () => {
-    const projectsSection = document.getElementById("projects");
+    const projectsSection = document.getElementById('projects');
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
   const handleContactScroll = () => {
-    const contactSection = document.getElementById("contact");
+    const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
