@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../atoms/Button';
 import Section from '../atoms/Section';
 import '../../styles/components/Contact.scss';
@@ -13,7 +12,7 @@ const Contact = () => {
       <div className="contact-content">
         <p>
           Estou em busca da minha primeira oportunidade profissional como
-          desenvolvedor front-end. Se você tem uma vaga ou projeto em mente,
+          desenvolvedor front-end, back-end ou full-stack. Se você tem uma vaga ou projeto em mente,
           ficarei feliz em conversar!
         </p>
         <Button variant="primary" onClick={handleContactClick}>

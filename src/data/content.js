@@ -5,7 +5,7 @@ export const projects = [
     description:
       'Recriação da interface do serviço de streaming Disney+, com foco na fidelidade visual e responsividade, utilizando tecnologias web modernas.',
     tags: ['React', 'Styled Components', 'UI Clone'],
-    icon: '🏰',
+    iconText: 'D+',
     demoLink: 'https://projeto-disneyplus.vercel.app/',
     codeLink: 'https://github.com/SeraphCloud/projeto-disneyplus',
   },
@@ -15,7 +15,7 @@ export const projects = [
     description:
       'Aplicação para listagem e busca de filmes consumindo a API do The Movie Database (TMDB). Um projeto para praticar integração com APIs externas.',
     tags: ['React', 'API', 'JavaScript', 'CSS'],
-    icon: '🎬',
+    iconText: 'TMDB',
     demoLink: 'https://verzel-tmdb-app.vercel.app/',
     codeLink: 'https://github.com/SeraphCloud/Verzel-TMDb-app',
   },
@@ -25,7 +25,7 @@ export const projects = [
     description:
       'Interface de uma loja virtual de games, com layout moderno e focado na experiência do usuário para apresentação e venda de jogos.',
     tags: ['React', 'UI/UX', 'E-commerce'],
-    icon: '🎮',
+    iconText: 'GAME',
     demoLink: 'https://site-games-shop-nine-gamma.vercel.app/',
     codeLink: 'https://github.com/SeraphCloud/Site_GamesShop',
   },
@@ -35,7 +35,7 @@ export const projects = [
     description:
       'Uma aplicação de lista de tarefas (To-Do List) para ajudar na organização do dia a dia, com funcionalidades de adicionar, remover e marcar tarefas como concluídas.',
     tags: ['JavaScript', 'HTML', 'CSS', 'Organização'],
-    icon: '✅',
+    iconText: 'TODO',
     demoLink: 'https://minhas-tarefas-ten-sandy.vercel.app/',
     codeLink: 'https://github.com/SeraphCloud/minhas-tarefas',
   },
@@ -43,9 +43,9 @@ export const projects = [
     id: 5,
     title: 'Gerenciador de Estoque',
     description:
-      'Uma aplicação em Django para gerenciar estoques de pequenas empresas, com movimentações de entrada e saída, valores e quantidade de produtos e histórico completo de mudanças do estoque.',
+      'Uma aplicação em Django para gerenciar estoques de pequenas empresas, com movimentações de entrada e saída, valores, quantidade de produtos e histórico completo de mudanças do estoque.',
     tags: ['Django', 'API REST', 'Organização', 'Gestão'],
-    icon: '✅',
+    iconText: 'STOCK',
     codeLink: 'https://github.com/Devv-ictor/django-stock-manager',
   }
 ];

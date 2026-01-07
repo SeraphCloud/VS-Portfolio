@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../atoms/Button';
 import '../../styles/components/Hero.scss';
 
@@ -23,7 +22,7 @@ const Hero = () => {
         <div className="hero-content">
           <p className="subtitle">Olá, meu nome é</p>
           <h1>Victor A. Silva</h1>
-          <h1 className="accent">Desenvolvedor Front-End</h1>
+          <h1 className="accent">Desenvolvedor <br /> Full-Stack</h1>
           <p>
             Estudante de Engenharia de Software apaixonado por criar
             experiências web modernas, responsivas e acessíveis. Especializado
