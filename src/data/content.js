@@ -43,7 +43,7 @@ export const projects = [
     id: 5,
     title: 'Gerenciador de Estoque',
     description:
-      'Uma aplicação e Django para gerenciar estoques de pequenas empresas, com movimentações de entrada e saída, valores e quantidade de produtos e histórico completo de mudanças do estoque.',
+      'Uma aplicação em Django para gerenciar estoques de pequenas empresas, com movimentações de entrada e saída, valores e quantidade de produtos e histórico completo de mudanças do estoque.',
     tags: ['Django', 'API REST', 'Organização', 'Gestão'],
     icon: '✅',
     codeLink: 'https://github.com/Devv-ictor/django-stock-manager',
