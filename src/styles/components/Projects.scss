@@ -1,13 +1,12 @@
 // Projects
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
-
 // Responsive
 @media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+  #projects {
+    padding-top: 2rem;
   }
 }
