@@ -22,3 +22,16 @@
     border-radius: $border-radius-sm;
   }
 }
+
+// Responsive: Center titles on mobile
+@media (max-width: 768px) {
+  .section-title {
+    display: block;
+    text-align: center;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
