@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../../styles/components/Navigation.scss';
 
 const Navigation = ({ activeSection }) => {

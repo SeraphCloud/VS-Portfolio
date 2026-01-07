@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectCard from '../molecules/ProjectCard';
 import Section from '../atoms/Section';
 import '../../styles/components/Projects.scss';
@@ -16,7 +15,7 @@ const Projects = () => {
             tags={project.tags}
             demoLink={project.demoLink}
             codeLink={project.codeLink}
-            icon={project.icon}
+            iconText={project.iconText}
           />
         ))}
       </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import SkillItem from '../molecules/SkillItem';
 import Section from '../atoms/Section';
 import '../../styles/components/About.scss';

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../styles/components/ProjectCard.scss';
 
 const ProjectCard = ({
@@ -7,11 +6,10 @@ const ProjectCard = ({
   tags,
   demoLink,
   codeLink,
-  icon,
+  iconText,
 }) => {
   return (
     <div className="project-card">
-      <div className="project-image">{icon}</div>
       <div className="project-content">
         <h3>{title}</h3>
         <p>{description}</p>

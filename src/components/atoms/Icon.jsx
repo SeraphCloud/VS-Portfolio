@@ -1,4 +1,3 @@
-import React from 'react';
 import { icons } from '../../data/icons';
 
 const Icon = ({ name, ariaLabel, ...props }) => {
