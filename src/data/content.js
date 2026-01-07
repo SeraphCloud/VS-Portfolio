@@ -39,6 +39,15 @@ export const projects = [
     demoLink: 'https://minhas-tarefas-ten-sandy.vercel.app/',
     codeLink: 'https://github.com/SeraphCloud/minhas-tarefas',
   },
+  {
+    id: 5,
+    title: 'Gerenciador de Estoque',
+    description:
+      'Uma aplicação em Django para gerenciar estoques de pequenas empresas, com movimentações de entrada e saída, valores e quantidade de produtos e histórico completo de mudanças do estoque.',
+    tags: ['Django', 'API REST', 'Organização', 'Gestão'],
+    icon: '✅',
+    codeLink: 'https://github.com/Devv-ictor/django-stock-manager',
+  }
 ];
 
 export const skills = [
@@ -49,9 +58,11 @@ export const skills = [
   { id: 5, name: 'HTML5 & CSS3' },
   { id: 6, name: 'Tailwind CSS' },
   { id: 7, name: 'Sass/SCSS' },
-  { id: 8, name: 'MongoDB' },
+  { id: 8, name: 'Python' },
   { id: 9, name: 'Git & GitHub' },
   { id: 10, name: 'Vercel' },
   { id: 11, name: 'Responsive Design' },
   { id: 12, name: 'Atomic Design' },
+  { id: 13, name: 'Django'},
+  { id: 14, name: 'PostgreSQL'},
 ];
