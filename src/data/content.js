@@ -1,6 +1,6 @@
 import disneyPlusImg from "../assets/disney_plus.png";
 import tmdbImg from "../assets/tmdb_app.png";
-import gamesImg from "../assets/games_shop.png";
+import eplayImg from "../assets/eplay.png";
 import taskImg from "../assets/task_manager.png";
 import stockImg from "../assets/stock_manager.png";
 
@@ -10,7 +10,7 @@ export const projects = [
 		title: "Clone da Interface do Disney+",
 		description:
 			"Recriação da interface do serviço de streaming Disney+, com foco na fidelidade visual e responsividade, utilizando tecnologias web modernas.",
-		tags: ["React", "Styled Components", "UI Clone"],
+		tags: ["React.js", "Sass/SCSS", "Responsive Design"],
 		imgSrc: disneyPlusImg,
 		demoLink: "https://projeto-disneyplus.vercel.app/",
 		codeLink: "https://github.com/SeraphCloud/projeto-disneyplus",
@@ -20,27 +20,27 @@ export const projects = [
 		title: "App de Filmes (TMDB)",
 		description:
 			"Aplicação para listagem e busca de filmes consumindo a API do The Movie Database (TMDB). Um projeto para praticar integração com APIs externas.",
-		tags: ["React", "API", "JavaScript", "CSS"],
+		tags: ["React.js", "JavaScript", "CSS3", "Responsive Design"],
 		imgSrc: tmdbImg,
 		demoLink: "https://verzel-tmdb-app.vercel.app/",
 		codeLink: "https://github.com/SeraphCloud/Verzel-TMDb-app",
 	},
 	{
 		id: 3,
-		title: "Loja de Games",
+		title: "E-Play",
 		description:
-			"Interface de uma loja virtual de games, com layout moderno e focado na experiência do usuário para apresentação e venda de jogos.",
-		tags: ["React", "UI/UX", "E-commerce"],
-		imgSrc: gamesImg,
-		demoLink: "https://site-games-shop-nine-gamma.vercel.app/",
-		codeLink: "https://github.com/SeraphCloud/Site_GamesShop",
+			"E-Play - Plataforma de jogos com interface moderna e funcionalidades para descoberta e entretenimento gamer.",
+		tags: ["React.js", "Responsive Design", "Vercel"],
+		imgSrc: eplayImg,
+		demoLink: "https://eplay-ten-kohl.vercel.app/",
+		codeLink: "https://github.com/SeraphCloud/eplay",
 	},
 	{
 		id: 4,
 		title: "Gerenciador de Tarefas",
 		description:
 			"Uma aplicação de lista de tarefas (To-Do List) para ajudar na organização do dia a dia, com funcionalidades de adicionar, remover e marcar tarefas como concluídas.",
-		tags: ["JavaScript", "HTML", "CSS", "Organização"],
+		tags: ["JavaScript", "HTML5", "CSS3"],
 		imgSrc: taskImg,
 		demoLink: "https://minhas-tarefas-ten-sandy.vercel.app/",
 		codeLink: "https://github.com/SeraphCloud/minhas-tarefas",
@@ -50,7 +50,7 @@ export const projects = [
 		title: "Gerenciador de Estoque (em andamento)",
 		description:
 			"Uma aplicação em Django para gerenciar estoques de pequenas empresas, com movimentações de entrada e saída, valores, quantidade de produtos e histórico completo de mudanças do estoque.",
-		tags: ["Django", "API REST", "Organização", "Gestão"],
+		tags: ["Django", "RESTApi", "PostgreSQL"],
 		imgSrc: stockImg,
 		codeLink: "https://github.com/Devv-ictor/django-stock-manager",
 	},
